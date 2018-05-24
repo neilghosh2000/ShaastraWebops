@@ -8,7 +8,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Signup for Shaastra 2019
   </title>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
@@ -28,6 +28,7 @@
 <form name="myForm" class="form" method="get">
 
 <div class="form__group">
+	<md-icon md-svg-src="img/icons/ic_person_24px.svg" class="name"></md-icon>
 	<input type="text" placeholder="First Name" class="form__input" name="first" ng-model="first" ng-class="{red: myForm.first.$invalid && myForm.first.$touched}" required>
 	<span class="form__span" ng-show="myForm.first.$invalid && myForm.first.$touched">Please enter First Name.</span>
 
@@ -103,7 +104,7 @@
 </form>
 </div>
 
-<script  src="js/index.js"></script>
+<script  src="index.js"></script>
 
 </body>
 </html>
